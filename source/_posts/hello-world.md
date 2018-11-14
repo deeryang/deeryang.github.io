@@ -5,6 +5,15 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
+test
+``` cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    return 0;
+}
+```
 ### Create a new post
 
 ``` bash
