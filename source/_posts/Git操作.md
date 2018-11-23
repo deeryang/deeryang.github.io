@@ -1,6 +1,7 @@
 ---
 title : Git操作
 tags  : git
+categories: git
 ---
 
 # Git操作
