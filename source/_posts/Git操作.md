@@ -6,7 +6,7 @@ categories: git
 
 # Git操作
 
-##初次运行Git前的配置
+## 初次运行Git前的配置
 Git自带一个`git config`的工具来帮助设置Git外观和行为的配置变量。
 所有的信息可以在`.git/config`文件中查看。
 ### 用户信息
