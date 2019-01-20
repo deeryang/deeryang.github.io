@@ -108,20 +108,25 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yang">
-<meta property="og:url" content="https://deeryang.github.io/tags/web/index.html">
+  <meta name="description" content="在Python中，对对象赋值实际上是对对象的引用。当创建一个对象，然后把它赋给另一个变量时，Python并没有拷贝这个对象，而只是拷贝了对这个对象的引用。这两个对象共用一个地址，当改变一个变量的值时，另一个变量的值也随之改变。这种就称之为浅复制。而深复制则是指另一个对象虽然变量的值与第一个变量相同，但是两个变量所占的地址并不相同。改变一个变量的值，并不会改变另一个变量的值。">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅复制与深复制">
+<meta property="og:url" content="https://deeryang.github.io/2019/01/20/浅复制与深复制/index.html">
 <meta property="og:site_name" content="yang">
+<meta property="og:description" content="在Python中，对对象赋值实际上是对对象的引用。当创建一个对象，然后把它赋给另一个变量时，Python并没有拷贝这个对象，而只是拷贝了对这个对象的引用。这两个对象共用一个地址，当改变一个变量的值时，另一个变量的值也随之改变。这种就称之为浅复制。而深复制则是指另一个对象虽然变量的值与第一个变量相同，但是两个变量所占的地址并不相同。改变一个变量的值，并不会改变另一个变量的值。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-20T13:46:28.116Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yang">
+<meta name="twitter:title" content="浅复制与深复制">
+<meta name="twitter:description" content="在Python中，对对象赋值实际上是对对象的引用。当创建一个对象，然后把它赋给另一个变量时，Python并没有拷贝这个对象，而只是拷贝了对这个对象的引用。这两个对象共用一个地址，当改变一个变量的值时，另一个变量的值也随之改变。这种就称之为浅复制。而深复制则是指另一个对象虽然变量的值与第一个变量相同，但是两个变量所占的地址并不相同。改变一个变量的值，并不会改变另一个变量的值。">
 
 
 
 
 
 
-  <link rel="canonical" href="https://deeryang.github.io/tags/web/">
+  <link rel="canonical" href="https://deeryang.github.io/2019/01/20/浅复制与深复制/">
 
 
 
@@ -131,7 +136,7 @@
   };
 </script>
 
-  <title>标签: web | yang</title>
+  <title>浅复制与深复制 | yang</title>
   
 
 
@@ -180,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -255,7 +260,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -337,82 +342,202 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>web<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deeryang.github.io/2019/01/20/浅复制与深复制/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/rabbit.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yang">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/11/26/常用网站/" itemprop="url">
-              
-                <span itemprop="name">个人常用网站记录</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">浅复制与深复制
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T21:38:18+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-20 21:47:00 / 修改时间：21:46:28" itemprop="dateCreated datePublished" datetime="2019-01-20T21:47:00+08:00">2019-01-20</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>在Python中，对对象赋值实际上是对对象的引用。<br>当创建一个对象，然后把它赋给另一个变量时，Python并没有拷贝这个对象，而只是拷贝了对这个对象的引用。这两个对象共用一个地址，当改变一个变量的值时，另一个变量的值也随之改变。这种就称之为浅复制。<br>而深复制则是指另一个对象虽然变量的值与第一个变量相同，但是两个变量所占的地址并不相同。改变一个变量的值，并不会改变另一个变量的值。</p>
+<a id="more"></a>
+<h3 id="浅复制"><a href="#浅复制" class="headerlink" title="浅复制"></a>浅复制</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">b = a</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br><span class="line">print(id(a))</span><br><span class="line">print(id(b))</span><br><span class="line">b[<span class="number">1</span>] = <span class="number">10</span></span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
+<p>在这种情况下，列表a和列表b所指的内存是一样的，当改变列表b中元素的值时，列表a中元素的值也会随之改变。<br>上述程序执行的结果为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4]</span><br><span class="line">[1, 2, 3, 4]</span><br><span class="line">1609119067848</span><br><span class="line">1609119067848</span><br><span class="line">[1, 10, 3, 4]</span><br><span class="line">[1, 10, 3, 4]</span><br></pre></td></tr></table></figure></p>
+<h3 id="深复制"><a href="#深复制" class="headerlink" title="深复制"></a>深复制</h3><p>如果想要在改变列表b的同时，并不改变列表a的元素，则需要通过深复制来实现。通过调用<code>copy()</code>方法来实现。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">b = a.copy()</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br><span class="line">print(id(a))</span><br><span class="line">print(id(b))</span><br><span class="line">b[<span class="number">1</span>] = <span class="number">10</span></span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure></p>
+<p>此时，列表a和列表b所指向的内存并不一样。程序的运行结果为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4]</span><br><span class="line">[1, 2, 3, 4]</span><br><span class="line">2329682407112</span><br><span class="line">2329681537672</span><br><span class="line">[1, 2, 3, 4]</span><br><span class="line">[1, 10, 3, 4]</span><br></pre></td></tr></table></figure></p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>浅复制只是将对象的值进行了一次拷贝，并没有开辟新的内存空间，赋值前后的对象共用同一片地址，相当于对象的引用。<br>深复制不仅将对象的值进行了拷贝，同时也新开辟了一片内存空间，新的对象与原对象没有任何联系。</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"> <i class="fa fa-tag"></i> python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/20/python变量与地址的关系/" rel="next" title="python变量与地址的关系">
+                <i class="fa fa-chevron-left"></i> python变量与地址的关系
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -433,8 +558,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -537,6 +671,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#浅复制"><span class="nav-number">1.</span> <span class="nav-text">浅复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深复制"><span class="nav-number">2.</span> <span class="nav-text">深复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -708,6 +858,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
